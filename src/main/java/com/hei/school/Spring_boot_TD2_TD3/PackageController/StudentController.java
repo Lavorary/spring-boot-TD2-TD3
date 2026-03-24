@@ -1,7 +1,6 @@
-package PackageController;
+package com.hei.school.Spring_boot_TD2_TD3.PackageController;
 
-import PackageService.StudentService;
-import com.fasterxml.jackson.annotation.JsonFormat;
+import com.hei.school.Spring_boot_TD2_TD3.PackageService.StudentService;
 import entity.Student;
 import lombok.Data;
 import org.springframework.web.bind.annotation.*;

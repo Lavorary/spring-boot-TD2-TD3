@@ -1,4 +1,4 @@
-package PackageService;
+package com.hei.school.Spring_boot_TD2_TD3.PackageService;
 
 import entity.Student;
 import lombok.Data;
