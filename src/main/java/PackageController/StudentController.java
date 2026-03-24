@@ -3,20 +3,17 @@ package PackageController;
 import PackageService.StudentService;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import entity.Student;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
+import lombok.Data;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Data
+
+@RestController
 public class StudentController {
     private final StudentService studentService;
-
-    public StudentController(StudentService studentService) {
-        this.studentService = studentService;
-    }
 
 
     @PostMapping("/students")
